@@ -39,7 +39,9 @@ app.get("/api/projects", (req, res) => {
     res.sendFile(__dirname + "/data/projects.json")
  
   });
-
+app.get("/api/articles",(req,res) =>{
+  res.json(articles)
+});
 
 
 // START THE SERVER
